@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.App:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  color: #023e8a; /* Dark blue color */
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #023e8a; /* Dark blue header */
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa; /* Very light gray for even rows */
+}
+
+tr:hover {
+  background-color: #e1ecf4; /* Light blue on hover */
+}
+
+th {
+  background-color: #0077b6; /* Slightly lighter blue for table headers */
+  color: white;
+}
+
+td {
+  color: #333;
+}
+
+td:nth-child(4) {
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #0077b6; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #023e8a; /* Darken button on hover */
+}
