@@ -1,87 +1,100 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f8ff; /* Light blue background */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
+/* src/App.css */
 .App {
-  text-align: center;
-  width: 90%;
-  max-width: 1200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 30px;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.App:hover {
-  transform: scale(1.01);
+  max-width: 1200px; /* Limit the width for better readability on large screens */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4; /* Light background for the whole app */
 }
 
 h1 {
-  color: #023e8a; /* Dark blue color */
-  font-size: 2.5rem;
-  margin-bottom: 25px;
+  text-align: center;
+  color: #2c3e50; /* Darker color for better contrast */
+  margin-bottom: 30px;
+  font-size: 2.2em;
 }
 
-table {
+.search-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.search-filter input {
+  width: 100%;
+  max-width: 600px; /* Limit the input width for better appearance */
+  padding: 14px 24px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  color: #2c3e50;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-filter input:focus {
+  border-color: #2980b9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: #ecf0f1;
+  outline: none;
+}
+
+.citizens-container {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.citizens-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
+  margin-top: 20px;
 }
 
-thead {
-  background-color: #023e8a; /* Dark blue header */
-  color: white;
-}
-
-th, td {
+.citizens-table th,
+.citizens-table td {
   padding: 15px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(even) {
-  background-color: #f8f9fa; /* Very light gray for even rows */
-}
-
-tr:hover {
-  background-color: #e1ecf4; /* Light blue on hover */
-}
-
-th {
-  background-color: #0077b6; /* Slightly lighter blue for table headers */
+.citizens-table th {
+  background-color: #3498db;
   color: white;
+  font-size: 1.1em;
 }
 
-td {
-  color: #333;
+.citizens-table td {
+  background-color: #ffffff;
+  color: #2c3e50;
 }
 
-td:nth-child(4) {
-  text-align: right;
+.citizens-table tr:hover {
+  background-color: #f1f1f1;
 }
 
 button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #0077b6; /* Button background color */
+  padding: 14px 28px;
+  margin-top: 15px;
+  background-color: #002c49;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  font-size: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-  background-color: #023e8a; /* Darken button on hover */
+  background-color: #00548b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+    
